@@ -89,7 +89,7 @@
 
 .image {
   display: block;
-  height: 700px;
+  width: 100%;
 }
 
 .image--grayscale {
