@@ -1,10 +1,15 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
  :root {
    --font-main: 'Inter';
-   --font-accent: 'PressStart2P-Regular';
+   --font-accent: 'PressStart2P-Regular', fantasy;
    --font-wght-main: 700;
    --font-wght-accent: 400;
    --main-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff;
    --main-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
    --accent-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+   --accent-color: #000000;
+   --color-countur: black;
+   --color-main-body: #FF0000;
+   --color-core: white;
+
  }
