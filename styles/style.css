@@ -4,7 +4,6 @@
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
@@ -190,8 +189,6 @@
   mix-blend-mode: difference;
   z-index: 1;
   transition: color 0.3s ease;
-  width: 21px;
-  height: 21px;
   flex-shrink: 0;
 }
 
@@ -397,6 +394,7 @@
 
 .button__agree {
   background: none;
+  outline: none;
   font-family: var(--font-accent);
   width: 257px;
   height: 38px;
@@ -439,6 +437,11 @@
   .icon {
     width: 28px;
     height: 28px;
+  }
+
+  .popup__content .icon {
+    width: 39px;
+    height: 39px;
   }
 }
 
