@@ -9,32 +9,12 @@
 
 */
 
-@keyframes heart {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.25);
-  }
-}
-
-@keyframes sparks {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
   margin: 0 auto;
   font-family: var(--font-main), sans-serif;
-  font-variation-settings: var(--font-wght-main);
+  font-variation-settings: var(--font-wght-accent);
   margin-top: 100px;
   margin-bottom: 100px;
   max-width: 700px;
@@ -42,6 +22,7 @@
                     repeating-linear-gradient(to top, #d3d3d3 0 2px, transparent 2px 4px),
                     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
@@ -49,38 +30,33 @@
 }
 
 .card__title {
-  height: 368px;
   border: 2px solid #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
+  padding: 128px 0;
 }
 
 .header__logo {
   font-family: var(--font-accent);
-  font-variation-settings: var(--font-wght-accent);
   font-size: var(--main-size);
 }
 
 .title__text {
   font-family: var(--font-accent);
-  font-variation-settings: var(--font-wght-accent);
   font-size: var(--accent-size);
   margin-top: 20px;
   text-transform: uppercase;
 }
 
-.title {
-  background-color: white;
-  border: 2px solid #000000;
-  border-bottom: none;
-}
-
 .title__accent {
   font-size: 18px;
+  font-weight: var(--font-wght-main);
   padding: 4px 10px 4px 10px;
+  background-color: white;
+  border: 2px solid #000000;
 }
 
 .text__label {
@@ -117,10 +93,10 @@
 }
 
 .image__rotate {
-  filter: hue-rotate(45deg) hue-rotate(45deg);;
+  filter: hue-rotate(45deg) hue-rotate(45deg);
 }
 
-.sprint-3-end .text__label {
+.card .text__label {
   overflow: hidden;
 }
 
@@ -131,7 +107,7 @@
   opacity: 50%;
   text-shadow: var(--main-shadow);
   z-index: 1;
-  top: 28px;
+  top: 26px;
   right: 27px;
 }
 
@@ -146,21 +122,20 @@
 
 .card__text {
   border: 2px solid #000000;
-  border-top: none;
   margin-bottom: 50px;
   background-color: white;
 }
 
-.article {
+.p {
   font-size: 18px;
-  padding: 25px 25px 2px 25px;
+  padding: 22px 25px 5px 25px;
   line-height: 21px;
 }
 
 .blok__button {
   display: flex;
   justify-content: flex-end;
-  margin: 24px 25px 25px 0;
+  padding: 20px 25px 25px 0;
 }
 
 .card__icon-button {
@@ -250,14 +225,13 @@
   animation: sparks 0.3s ease-in 0.3s forwards;
 }
 
-.like-icon.is-liked .heart {
+.like-icon.is-liked {
   animation: heart 0.3s ease-in 0.1s;
   transform-origin: center center;
 }
 
 .button__text {
   font-family: var(--font-accent);
-  font-variation-settings: var(--font-wght-accent);
   font-size: 14px;
   position: relative;
   z-index: 1;
@@ -359,26 +333,21 @@
   transition: color 0.5s ease-in-out;
 }
 
-.popup {
-  font-family: var(--font-accent);
-  font-variation-settings: var(--font-wght-accent);
-  font-size: 14px;
-}
-
 .popup__content {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   width: 257px;
-  height: 63px;
 }
 
 .dialog {
   width: 353px;
-  height: 191px;
   border: 2px solid #000000;
   padding: 30px 30px 30px 30px;
   position: fixed;
+  font-family: var(--font-accent);
+  font-variation-settings: var(--font-wght-accent);
+  font-size: 14px;
 }
 
 .dialog[open] {
@@ -399,6 +368,7 @@
   width: 257px;
   height: 38px;
   border: 2px solid #000000;
+  text-transform: uppercase;
 }
 
 .dialog::backdrop {
@@ -407,11 +377,10 @@
 
 @media (width<=375px) {
   .card__title {
-    height: 326px;
+    padding: 120px 0;
   }
 
   .overlay__text {
-    position: absolute;
     font-family: var(--font-accent);
     font-size: 14px;
     opacity: 50%;
