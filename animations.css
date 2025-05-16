@@ -1,10 +1,12 @@
 @keyframes heart {
-  from {
+  0% {
     transform: scale(1);
   }
-
-  to {
+  50% {
     transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
@@ -12,9 +14,13 @@
   0% {
     opacity: 0;
   }
-
-  100% {
+  50% {
     opacity: 1;
   }
+  100% {
+    opacity: 0;
+  }
 }
+
+
 
