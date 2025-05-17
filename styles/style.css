@@ -291,13 +291,9 @@
   transition: 0.3s ease;
 }
 
-.card__like-button:hover .button__text {
+.button__animation:hover .button__text {
   color: #ffffff;
   mix-blend-mode: difference;
-}
-
-.card__like-button:hover .icon {
-  color: white;
 }
 
 .save__button {
@@ -311,11 +307,7 @@
   transition: box-shadow 0.5s ease-in-out;
 }
 
-.save__button:hover .button__text {
-  color: white;
-}
-
-.save__button:hover .icon {
+.button__animation:hover .icon {
   mix-blend-mode: difference;
   transition: color 0.5s ease-in-out;
 }
