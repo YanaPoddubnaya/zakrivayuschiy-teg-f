@@ -253,14 +253,17 @@
 }
 
 .card__like-button {
-  border: 2px solid #000000;
-  background: none;
   width: 130px;
   height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: color 0.5s ease-in-out;
+}
+
+.base-button {
+  border: 2px solid #000000;
+  background: none;
   position: relative;
   overflow: hidden;
 }
@@ -313,6 +316,7 @@
 .save__button:focus {
   outline: none;
   box-shadow: 2px 2px 0;
+  transition: 0.3s ease;
 }
 
 .save__button:hover {
@@ -331,17 +335,18 @@
 .popup__content {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .dialog {
-  width: 357px;
+  max-width: 357px;
   border: 2px solid #000000;
   padding: 30px 30px 30px 30px;
   position: fixed;
   font-family: var(--font-accent);
   font-weight: 700;
   font-size: 14px;
+  box-sizing: border-box;
 }
 
 .dialog[open] {
@@ -357,15 +362,11 @@
 }
 
 .button__agree {
-  background: none;
   outline: none;
   font-family: var(--font-accent);
   width: 293px;
   height: 38px;
-  border: 2px solid #000000;
   text-transform: uppercase;
-  position: relative;
-  overflow: hidden;
 }
 
 .button__agree:hover::before {
@@ -375,6 +376,7 @@
 .button__agree:focus {
   outline: none;
   box-shadow: 2px 2px 0;
+  transition: 0.3s ease;
 }
 
 .button__agree:hover {
@@ -420,6 +422,7 @@
 
   .dialog {
     max-width: 341px;
+    width: 100%;
     padding: 30px 40px 30px 40px;
   }
 
