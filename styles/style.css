@@ -261,7 +261,7 @@
   transition: color 0.5s ease-in-out;
 }
 
-.base-button {
+.button__animation {
   border: 2px solid #000000;
   background: none;
   position: relative;
@@ -281,11 +281,11 @@
   transition: width 0.5s ease-in-out;
 }
 
-.card__like-button:hover::before {
+.button__animation:hover::before {
   width: 100%;
 }
 
-.card__like-button:focus {
+.button__animation:focus {
   outline: none;
   box-shadow: 2px 2px 0;
   transition: 0.3s ease;
@@ -304,22 +304,10 @@
   width: 339px;
   height: 55px;
   background-color: white;
-  border: 2px solid #000000;
-  position: relative;
   transition: color 0.5s ease-in-out;
 }
 
-.save__button:hover::before {
-  width: 100%;
-}
-
-.save__button:focus {
-  outline: none;
-  box-shadow: 2px 2px 0;
-  transition: 0.3s ease;
-}
-
-.save__button:hover {
+.button__animation:hover {
   transition: box-shadow 0.5s ease-in-out;
 }
 
@@ -367,20 +355,6 @@
   width: 293px;
   height: 38px;
   text-transform: uppercase;
-}
-
-.button__agree:hover::before {
-  width: 100%;
-}
-
-.button__agree:focus {
-  outline: none;
-  box-shadow: 2px 2px 0;
-  transition: 0.3s ease;
-}
-
-.button__agree:hover {
-  transition: box-shadow 0.5s ease-in-out;
 }
 
 .dialog::backdrop {
